@@ -65,9 +65,9 @@ class _WeatherState extends State<Weather> {
               child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-              Text("${new DateFormat('E dd/MM/yyyy').format(DateTime.fromMicrosecondsSinceEpoch(weatherData?[index]['dt']*1000))}",
+              Text("${new DateFormat('E dd/MM/yyyy').format(DateTime.fromMicrosecondsSinceEpoch(weatherData?[index]['dt']*1000000))}",
               style: TextStyle(fontSize: 16,color: Colors.white,fontWeight:FontWeight.bold)),
-              Text("${new DateFormat('HH:mm').format(DateTime.fromMicrosecondsSinceEpoch(weatherData?[index]['dt']*1000))} | ${weatherData?[index]['weather'][0]['main']}",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight:FontWeight.bold)),
+              Text("${new DateFormat('HH:mm').format(DateTime.fromMicrosecondsSinceEpoch(weatherData?[index]['dt']*1000000))} | ${weatherData?[index]['weather'][0]['main']}",style: TextStyle(fontSize: 20,color: Colors.white,fontWeight:FontWeight.bold)),
               ],
               ),
               ),

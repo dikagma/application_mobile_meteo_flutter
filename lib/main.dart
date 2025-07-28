@@ -1,8 +1,9 @@
 import 'package:firstapp_drawer/weather-form.dart';
 import 'package:flutter/material.dart';
 
-import 'Quiz.dart';
-import 'Weather.dart';
+import 'gallery.dart';
+import 'quiz.dart';
+import 'weather.dart';
 
 void main() => runApp(MaterialApp(
    home: MyApp(),
@@ -54,7 +55,18 @@ class MyApp extends StatelessWidget{
                 onTap: () {
                   Navigator.of(context).pop();
                   Navigator.push(context, MaterialPageRoute(builder: (context) => WeatherForm()));
+                }),
+            ListTile(
+                title: Text(
+                  'Gallery',style: TextStyle(fontSize: 18),
+                ),
+                trailing: Icon(Icons.arrow_right),
+
+                onTap: () {
+                  Navigator.of(context).pop();
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Gallery()));
                 })
+
           ],
         ),
       )

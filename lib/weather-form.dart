@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'Weather.dart';
+import 'weather.dart';
 
 class WeatherForm extends StatefulWidget {
   @override
